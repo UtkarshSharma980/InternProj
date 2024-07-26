@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-between;
+    height: 7vh;
+    width: 100vw;
+    border: 1px solid darkblue;
+    align-items: center;
+}
+#buttons{
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#buttons .button{
+    background-color: aqua;
+    border: 0px;
+}
+#buttons .button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    transition: .2s;
+}
+
+
+
+#main{
+    height:87vh ;
+    width: 100vw;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#input{
+    height: 50%;
+    width: 100vw;
+}
+#input-user{
+    height: 100%;
+    width: 100vw;
+}
+
+#essential-buttons{
+    height: 5vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.eb{
+    font-size: medium;
+    border: 0cm;
+    background-color:aliceblue;
+}
+.eb:hover{
+    background-color: beige;
+
+}
+
+
+#output{
+    height: 50%;
+    width: 100vw;
+}
+#output-user{
+    height: 100%;
+    width: 100vw;
+}
