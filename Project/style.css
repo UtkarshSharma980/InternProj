@@ -5,8 +5,8 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    background-color:black;
+    color:white;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -19,7 +19,7 @@ body {
 #header{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    background-color: lightgreen;
     justify-content: space-between;
     height: 7vh;
     width: 100vw;
@@ -31,14 +31,20 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
 #buttons .button{
-    background-color: aqua;
-    border: 0px;
+    /* background-color: aqua; */
+    /* border: 0px; */
+    color: black;
+    background-color: lightgreen;
+
+    padding: 5px;
+    border-radius: 10px;
 }
 #buttons .button:hover{
     cursor: pointer;
-    background-color: aquamarine;
+    /* background-color: white; */
     transition: .2s;
 }
 
@@ -47,7 +53,7 @@ body {
 #main{
     height:87vh ;
     width: 100vw;
-    background-color: azure;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,10 +61,15 @@ body {
 #input{
     height: 50%;
     width: 100vw;
+    background-color: black;
+    color: white;
 }
 #input-user{
     height: 100%;
     width: 100vw;
+    background-color: black;
+    color: white;
+
 }
 
 #essential-buttons{
@@ -71,11 +82,16 @@ body {
 }
 .eb{
     font-size: medium;
-    border: 0cm;
+    /* border: 0cm; */
     background-color:aliceblue;
+    /* color: white; */
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 1rem;
 }
 .eb:hover{
     background-color: beige;
+    color: grey;
 
 }
 
@@ -83,8 +99,19 @@ body {
 #output{
     height: 50%;
     width: 100vw;
+    background-color: black;
+    color: white;
+
 }
 #output-user{
     height: 100%;
     width: 100vw;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+}
+
+
+textarea {
+    resize: none;
 }

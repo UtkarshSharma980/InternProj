@@ -10,11 +10,12 @@
     <div id="header">
         <h2>SummarAIze</h2>
         <div id="buttons">
-                <button type="button" class="button">
-                    <h3>Log in</h3>
+                <button type="button" class="button" id="loginButton">
+                    Log in
+                    <!-- <a href="login.html" ></a> -->
                 </button>            
-                <button type="button" class="button">
-                    <h3>Sign up</h3>
+                <button type="button" class="button" id="signupButton">
+                    Sign up
                 </button>
         </div>
     </div>
@@ -31,4 +32,13 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+    
+    document.getElementById('signupButton').addEventListener('click', function() {
+        window.location.href = 'signup.html';
+    });
+</script>
 </html>
