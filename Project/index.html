@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="header">
-        <h2>SummarAIze</h2>
-        <div id="buttons">
-                <button type="button" class="button" id="loginButton">
-                    Log in
-                    <!-- <a href="login.html" ></a> -->
-                </button>            
-                <button type="button" class="button" id="signupButton">
-                    Sign up
-                </button>
+        <h1>SummarAIze</h1>
+        <div>
+            <select id="size">
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+                <option value="22px">22px</option>
+                <option value="24px">24px</option>
+                <option value="26px">26px</option>
+                <option value="28px">28px</option>
+                <option value="30px">30px</option>
+                <option value="32px">32px</option>
+            </select>
+            <a href="./login.html">
+                Log in
+            </a>
+            <a href="./signup.html">
+                Sign up
+            </a>
+            <a href="./about.html">
+                About Us
+            </a>
         </div>
     </div>
     <div id="main">
-        <div id="input">
-            <textarea name="text-user" id="input-user">Enter Here</textarea>
-        </div>
+
+        <textarea name="text-user" id="input-user" placeholder="Enter Here"></textarea>
+
         <div id="essential-buttons">
-            <button class="eb" type="submit">Summarize</button>
-            <button class="eb" type="reset">Refresh</button>
+            <button type="submit">Summarize</button>
+            <button id="refresh">Refresh</button>
         </div>
-        <div id="output">
-            <textarea name="text-server" id="output-user" readonly>output will be here</textarea>
-        </div>
+
+        <textarea name="text-server" id="output-user" readonly placeholder="output will be here"></textarea>
     </div>
 </body>
-<script>
-    document.getElementById('loginButton').addEventListener('click', function() {
-        window.location.href = 'login.html';
-    });
-    
-    document.getElementById('signupButton').addEventListener('click', function() {
-        window.location.href = 'signup.html';
-    });
-</script>
+<script src="./app.js"></script>
+
 </html>
