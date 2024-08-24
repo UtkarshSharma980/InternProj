@@ -31,12 +31,12 @@ body{
     color: rgb(216, 217, 217);
 }
 #header > div{
-    width: 40%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#header > div a{
+#header a{
     color: rgb(196, 197, 197);
     text-decoration: none;
     font-size: 16px;
@@ -47,7 +47,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-#header > div a:hover{
+#header a:hover{
     color: rgb(255, 255, 255);
     font-size: 18px;
 }
@@ -87,12 +87,12 @@ body{
     align-items: center;
 }
 #main #essential-buttons button{
-    padding: 10px;
+    padding: 14px;
+    font-size: 20px;
     border-radius: 25px;
     background-color: rgb(255, 128, 0);
     color: rgb(206, 206, 206);
     border: 1px solid gray;
-
     cursor: pointer;
 }
 #main #essential-buttons button:hover{
@@ -105,9 +105,9 @@ body{
 
 
 
-/* login */
+/* login and signup */
 
-#Login{
+#Login,#Signup{
     background-color: rgb(51, 51, 51);
     width: 100vw;
     height: 100vh;
@@ -147,6 +147,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#or{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+#or .Dotted{
+    border: 1px dashed white;
+    width: 70%;
 }
 
 #form .sp {
